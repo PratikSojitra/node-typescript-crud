@@ -3,7 +3,7 @@ import express,{Express,Request,Response} from 'express'
 const routes = express.Router()
 
 routes.get('/',(req:Request,res:Response) => {
-    res.send('router is connected')
+    return res.render('index')
 })
 
 module.exports = routes
